@@ -9,13 +9,8 @@ document.getElementById("extractBtn").addEventListener("click", async () => {
             function: getLinkedInProfileData
         },
         (result) => {
-            console.log("test")
             if (result && result[0] && result[0].result) {
                 let { firstName, lastName, job, companie, csv } = result[0].result;
-
-                console.log("📄 CSV :");
-                console.log(csv);
-
                 // Affichage dans la popup
                 document.getElementById("csvOutput").innerText = csv;
             } else {
@@ -87,7 +82,7 @@ function getLinkedInProfileData() {
                     companie = companies[0]?.innerText || "Non spécifié"
                     companie = companie.split('\n')[0]
                 }
-                csv = `${firstName},${lastName},${job},${companie}`
+                csv = `${firstName},${lastName},${job},${companie},${document.URL}`
                 console.log(csv)
 
             } else {
