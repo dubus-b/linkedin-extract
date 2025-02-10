@@ -33,8 +33,6 @@ Sélectionner le dossier du projet (linkedin-to-csv).
 
 Ouvrir un profil LinkedIn (https://www.linkedin.com/in/nom-du-profil).
 
-Cliquer sur l'icône de l'extension EXTIA (en haut à droite).
-
 Cliquer sur le bouton "Exporter Nom & Expériences".
 
 ✅ Les données s'afficheront dans la popup et un fichier CSV sera généré.
