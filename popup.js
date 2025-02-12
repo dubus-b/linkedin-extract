@@ -82,7 +82,7 @@ function getLinkedInProfileData() {
                     companie = companies[0]?.innerText || "Non spécifié"
                     companie = companie.split('\n')[0]
                 }
-                csv = `${firstName},${lastName},${job},${companie},${document.URL}`
+                csv = `${firstName};${lastName};${job};${companie};${document.URL}`
                 console.log(csv)
 
             } else {
