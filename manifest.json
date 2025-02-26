@@ -3,15 +3,13 @@
     "name": "LinkedIn to CSV",
     "version": "1.0",
     "description": "Exportez facilement les profils LinkedIn en CSV.",
-    "permissions": ["scripting", "downloads", "activeTab", "storage"],
-    "host_permissions": ["https://www.linkedin.com/in/*"],
-    // "icons": {
-    //   "16": "icons/icons16.png",
-    //   "48": "icons/icons48.png",
-    //   "128": "icons/icons128.png"
-    // },
+    "permissions": ["scripting", "downloads", "activeTab", "storage", "tabs"],
+    "host_permissions": ["https://www.linkedin.com/in/*", "https://app.cognism.com/*"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": "icons/icon(1).png"
+    },
+    "background": {
+      "service_worker": "background.js"
     }
   }
